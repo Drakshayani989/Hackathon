@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduConnect - Institute Event Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
     <link rel="stylesheet" href="learn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -46,7 +54,11 @@
             </div>
         </div>
     </nav>
-
+<ul id="mobile-menu" class="hidden flex flex-col space-y-2 md:hidden">
+  <li><a href="#" class="text-white">Home</a></li>
+  <li><a href="#" class="text-white">About</a></li>
+  <li><a href="#" class="text-white">Contact</a></li>
+</ul>
     <!-- Hero Section -->
     <section class="gradient-bg text-white py-16">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
