@@ -6,16 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduConnect - Institute Event Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<script>
-  const toggleButton = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
 
-  toggleButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
     <link rel="stylesheet" href="learn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="log.png">
 </head>
 <body>
     <!-- Navigation -->
@@ -35,30 +29,29 @@
 </a>
 
             </div>
-            
-            <button id="mobileMenuButton" class="md:hidden text-2xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden gradient-bg px-4 py-2 pb-4">
-            <div class="flex flex-col space-y-3">
-                <a href="#events" class="hover:text-gray-200 transition">Events</a>
-                <a href="#institutes" class="hover:text-gray-200 transition">Institutes</a>
-                <a href="#about" class="hover:text-gray-200 transition">About</a>
-               <a href="login.html" class="bg-white text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
-  Login
-</a>
+            <button id="hamburgerBtn" class="md:hidden text-white focus:outline-none">
+  <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
 
-            </div>
-        </div>
     </nav>
-<ul id="mobile-menu" class="hidden flex flex-col space-y-2 md:hidden">
-  <li><a href="#" class="text-white">Home</a></li>
-  <li><a href="#" class="text-white">About</a></li>
-  <li><a href="#" class="text-white">Contact</a></li>
-</ul>
+    <!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden gradient-bg px-4 py-2 pb-4">
+  <div class="flex flex-col space-y-3 text-white">
+    <a href="#events" class="hover:text-gray-200 transition">Events</a>
+    <a href="#institutes" class="hover:text-gray-200 transition">Institutes</a>
+    <a href="#about" class="hover:text-gray-200 transition">About</a>
+    <a href="login.html" class="bg-white text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
+      Login
+    </a>
+  </div>
+</div>
+           
+
+    
     <!-- Hero Section -->
     <section class="gradient-bg text-white py-16">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
